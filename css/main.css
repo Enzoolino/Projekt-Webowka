@@ -55,7 +55,8 @@ li {
 	list-style-type: none;
 }
 
-img {
+img,
+video {
 	max-width: 100%;
 }
 
@@ -646,55 +647,22 @@ textarea {
 .work-process-content {
 	max-width: 50rem;
 	margin: 0 auto;
-	margin-bottom: 4.4rem;
-
 	text-align: center;
 }
 
-.work-process-title {
-	margin-bottom: 2.9rem;
-}
-
-.work-process-image-wrapper {
-	position: relative;
-}
-
-.work-process-image-wrapper::after {
-	content: '';
-
-	position: absolute;
-	left: 50%;
-	top: 50%;
-
-	border-radius: 100%;
-
-	width: 5rem;
-	height: 5rem;
-
-	background-image: url('../img/work-process/play-icon.svg');
-	background-color: white;
-	background-repeat: no-repeat;
-	background-position: center;
-
-	transform: translate(-50%, -50%);
-}
-
-.work-process-image {
-	aspect-ratio: 1160/554;
+.work-process-description {
+	margin-top: 2rem;
+	margin-bottom: 3rem;
 }
 
 @media screen and (min-width: 1024px) {
-	.work-process-content {
-		margin-bottom: 5.8rem;
+	.work-process-video {
+		max-width: 62.5%;
 	}
 
-	.work-process-title {
-		margin-bottom: 4rem;
-	}
-
-	.work-process-image-wrapper::after {
-		width: 7rem;
-		height: 7rem;
+	.contact-description {
+		margin-top: 3.4rem;
+		margin-bottom: 3.9rem;
 	}
 }
 
@@ -905,7 +873,7 @@ textarea {
 	}
 
 	.form-textarea {
-		padding: 1.8rem 2rem 14.1rem 2rem;
+		padding: 1.8rem 2rem 8rem 2rem;
 	}
 
 	.form-input-title,
